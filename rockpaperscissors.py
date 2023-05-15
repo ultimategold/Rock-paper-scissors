@@ -28,7 +28,7 @@ def playing_status():
           print(err)
 
 
-def play_rockpaperscissors():
+def  play_rockpapaerscissors():
    play = True
    while play:
        os.system('cls' if os.name == 'nt' else 'clear')
@@ -48,7 +48,7 @@ def play_rockpaperscissors():
        choices = ['R', 'P', 'S']
        opp_choice = random.choice(choices)
 
-       print(f'I chose: {opp_choice}')
+       print(f'I chose: {opp_choice} ball pit')
 
        if opp_choice == user_choice.upper():
            print('Tie!')
@@ -63,8 +63,9 @@ def play_rockpaperscissors():
            print('Paper beats rock, I win!')
            play = playing_status()
        else:
-           print('You win!\n')
+           print('Congratulations you win!\n')
            play = playing_status()
+           print ("Walking")
 
 
 if __name__ == '__main__':
